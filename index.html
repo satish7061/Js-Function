@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function(Satish)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>JS Function Questions</h1>
+
+    <h3>Qu 1. Create one function with zero parameter having a console statement;?</h3>
+<pre>
+    function fun(){
+        console.log("Hello, Wecome to prepbytes");
+    }
+    fun();
+</pre>
+    <h3>Qu 2. Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"?</h3>
+<pre>
+    function add(a,b){
+        let c=a+b;
+        return ("Sum of "+a+","+b+" is "+c);
+    }
+    console.log(add(3,4));
+</pre>
+    <h3>Qu 3. Create one arrow function?</h3>
+ <pre>
+    let test = (a, b) => {
+        product=a*b;
+        return ("Product of a and b : "+product);
+    }
+    console.log(test(5,8))
+</pre>
+
+<h3>Qu 4. Print output?</h3>
+<pre>
+    var x = 21;
+    var girl = function () {
+    console.log(x);
+    var x = 20;
+};
+girl ();
+</pre>
+
+<h2>Ans.  undefined </h2>
+
+<h3>Qu 5. Print output?</h3>
+<pre>
+    var x = 21;
+    girl ();
+    console.log(x)
+    function girl() {
+        console.log(x);
+        var x = 20;
+    };
+</pre>
+
+<h2>Ans.  undefined, 21 </h2>
+    
+    <h3>Qu 6. Print output?</h3>
+<pre>
+    var X = 21;
+a();
+b();
+
+function a(){
+    X=20;
+    console.log(X);
+};
+function b(){
+    X=40;
+    console.log(X);
+};
+</pre>
+
+<h2>Ans.  20, 40 </h2>
+
+    <h3>Qu 7. Write a function that accepts parameter n and returns factorial of n?</h3>
+<pre>
+    function factorial(n){
+        let fact=1;
+        for (let i=1;i<=n;i++){
+          fact *= i;
+        }
+        return ("Factorial of "+n+" is "+fact);
+    }
+    console.log(factorial(5));
+</pre>
+
+</body>
+</html>
